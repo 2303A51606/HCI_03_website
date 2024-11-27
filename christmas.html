@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Celebration</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff5f7;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(45deg, #1680ae, #cd2149);
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .logo-and-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-and-title h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            background-color: #ff4b2b;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('chris.jpg') no-repeat center center/cover;
+            color:black;
+            text-align: center;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin: 0 0 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #ff4b2b;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            width: 220px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 110%;
+            height: 110%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-and-title">
+                <img src="logo.png" alt="Church Logo" class="logo">
+                <div>
+                    <h1>Christmas Celebration</h1>
+                    <p class="subtitle">Celebrate the Joy of Christmas with Us!</p>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="http://127.0.0.1:5500/serviceDemo.html">Services</a>
+                <a href="http://127.0.0.1:5500/about_us.html">About Us</a>
+                <a href="http://127.0.0.1:5500/songsDemo.html">Songs</a>
+                <a href="http://127.0.0.1:5500/events.html">Back</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Welcome to Our Church's Christmas Celebration</h2>
+            <p>Join us for worship, fellowship, and festive joy.</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2 class="section-title">Highlights of the Celebration</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="celeb1.jpg" alt="Christmas Worship">
+                    <p>Worship Service</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="celeb2.jpg" alt="Christmas Carols">
+                    <p>Carols Night</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="celeb3.jpg" alt="Nativity Play">
+                    <p>Nativity Play</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="celeb4.jpg" alt="Community Gathering">
+                    <p>Community Feast</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Church Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login | Ludiflex</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    margin:0;
+    background-color: rgb(68, 194, 190);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/01/19/11/55/360_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg')
+}
+.login-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 520px;
+    padding: 30px;
+}
+.login-box{
+    background-color: rgba(255, 255, 255, 0.651);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width:500px;
+}
+.login-header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.login-header header{
+    color: #111010;
+    font-size: 30px;
+    font-weight: 600;
+    shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+    
+}
+.input-box .input-field{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(240, 238, 238, 0.05);
+    outline: none;
+    transition: .3s;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+::placeholder{
+    font-weight: 500;
+    color: #161515;
+}
+.input-field:focus{
+    width: 105%;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+#check{
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section a{
+    color: #555;
+}
+.input-submit{
+    position: relative;
+}
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #232322;
+    color:white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.input-submit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #f9f4f4;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background: #5ea734;
+    transform: scale(1.05,1);
+}
+.sign-up-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.sign-up-link a{
+    color: #000000;
+    font-weight: 600;
+}
+</style>
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <header>Login</header><br>
+            <header>AAJM MINISTRIES</header><br>
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" id="email" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" id="password" placeholder="Password" autocomplete="off" required>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+                
+            </section>
+            <section>
+                <a href="forgot.html">Forgot password</a>
+    
+            </section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" id="submit">Sign In</button>
+        </div>
+        <div class="sign-up-link">
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Predefined credentials
+        const validEmail = "user@example.com";
+        const validPassword = "password123";
+
+        // Add event listener to the button
+        document.getElementById("submit").addEventListener("click", function() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email === validEmail && password === validPassword) {
+                alert("Login successful!");
+                // Redirect to another page or perform other actions
+                window.location.href = "http://127.0.0.1:5500/website.html";
+            } else {
+                alert("Invalid email or password. Please try again.");
+            }
+
+        });
+    </script>
+</body>
+</html>

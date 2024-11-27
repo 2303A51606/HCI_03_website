@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Request</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+            background: #000;
+            color: #fff;
+            background-image: url('https://img.freepik.com/free-photo/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith_1150-12945.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Styling for Titles */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        nav .logo {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        nav button {
+            margin: 0 10px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: #45a049;
+        }
+
+        /* Styling for Forms */
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.905);
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        input[type="text"], 
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            outline: none;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+        }
+
+        /* Radio Buttons */
+        input[type="radio"] {
+            margin: 0 5px;
+        }
+
+        /* Submit Button */
+        .form-buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-buttons button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Prayer Request</h1>
+        <nav>
+            <a href="http://127.0.0.1:5500/website.html"><button>Home</button></a>
+            <a href="http://127.0.0.1:5500/songsDemo.html"><button>Songs</button></a>
+            <a href="http://127.0.0.1:5500/serviceDemo.html"><button>Service</button></a>
+        </nav>
+        <form action="/submit.php" method="post">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name">
+
+            <label for="mobile">Mobile</label>
+            <input type="number" id="mobile" name="mobile" placeholder="Enter your number">
+
+            <label for="pname">Prayer Request</label>
+            <input type="text" id="pname" name="pname" placeholder="Enter your prayer request">
+
+            <label>Select Gender</label>
+            <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label>
+
+            <label for="city">Select Your District</label>
+            <select name="city" id="city">
+                <option value="" disabled selected>Select your city</option>
+                <option value="ADILABAD">ADILABAD</option>
+                <option value="BHADRADRI KOTHAGUDEM">BHADRADRI KOTHAGUDEM</option>
+                <option value="HYDERABAD">HYDERABAD</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="address">Address</label>
+            <textarea name="address" id="address" placeholder="Enter your address here"></textarea>
+
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <a href="http://127.0.0.1:5500/login/projectfinal/index.html"><button type="button">Back</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Events</title>
+    <link rel="stylesheet" href="style_event.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="navbar">
+                <img src="logo.png" alt="Church Logo" class="logo">
+                <div class="header-text">
+                    <h1>Upcoming Church Events</h1>
+                    <p>Celebrate the spirit of faith and community through these special events.</p>
+                </div>
+                <ul class="nav-links">
+                    <li><button class="nav-btn" onclick="location.href='http://127.0.0.1:5500/website.html';">Home</button></li>
+                    <li><button class="nav-btn" onclick="location.href='http://127.0.0.1:5500/about_us.html';">About Us</button></li>
+                    <li><button class="nav-btn" onclick="location.href='http://127.0.0.1:5500/serviceDemo.html';">Services</button></li>
+                    <li><button class="nav-btn" onclick="location.href='http://127.0.0.1:5500/index.html';">Back</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <main>
+        <div class="events-container">
+            <!-- Christmas Eve -->
+            <div class="event-card" onclick="location.href='http://127.0.0.1:5500/christmas.html';">
+                <img src="christmas.jpg"  class="event-image">
+                <div class="event-details">
+                    <div class="event-date">
+                        <h2>24</h2>
+                        <p>Dec</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Christmas Eve Service</h3>
+                        <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                        <p><strong>Location:</strong> Main Sanctuary</p>
+                        <p>Join us for a candlelight service to celebrate the birth of Jesus Christ with carols and prayers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Good Friday -->
+            <div class="event-card">
+                <img src="friday.jpg" alt="Good Friday Service" class="event-image">
+                <div class="event-details">
+                    <div class="event-date">
+                        <h2>29</h2>
+                        <p>Mar</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Good Friday Service</h3>
+                        <p><strong>Time:</strong> 5:00 PM - 6:30 PM</p>
+                        <p><strong>Location:</strong> Main Sanctuary</p>
+                        <p>Reflect on the sacrifice of Jesus Christ during this solemn service with hymns and scripture readings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Easter -->
+            <div class="event-card">
+                <img src="easter.jpg" alt="Easter Sunday Celebration" class="event-image">
+                <div class="event-details">
+                    <div class="event-date">
+                        <h2>31</h2>
+                        <p>Mar</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Easter Sunday Celebration</h3>
+                        <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                        <p><strong>Location:</strong> Church Grounds</p>
+                        <p>Celebrate the resurrection of Jesus Christ with joyful worship and community fellowship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Church Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

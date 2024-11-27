@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Church Name</title>
+    <link rel="stylesheet" href="a-styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    background-color: #357ABD;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.about {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #e8f4fc;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    border-color: black;
+}
+
+.team {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius:3%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+</style>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">AAJM MINISTRIES</h1>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5500/website.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/about_us.html" class="active">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/serviceDemo.html">Services</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('https://t3.ftcdn.net/jpg/08/56/27/44/360_F_856274479_5vRRk6LiPOK4xzHUCS2t7DKZ69wyN8Lr.jpg'); background-size: cover; background-position: center; color: white; padding: 3rem 1rem;">
+            <div class="Church">
+            <img src="logo.png" alt="logo.png" width="150">
+                <p>on this page</p>
+            </div>
+            <h2>Welcome to AAJM Ministries</h2>
+            <p>A place where faith, love, and hope come together.</p>
+        </section>
+        
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>At <strong>AAJM Ministries</strong>, we are a community committed to growing together in faith, serving our neighbors, and sharing the teachings of Jesus Christ.</p>
+            <div class="mission-vision">
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>To spread the gospel, serve others, and build a loving community centered around Christ.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>To be a beacon of hope and faith, inspiring people to live out God’s purpose in their lives.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h2>Meet Us!</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="daniel.jpg" alt="daniel.jpg" width="500">
+                    <h4>Nagishetti Daniel</h4>
+                    <p>Lead Pastor</p>
+                </div>
+                <div class="team-member">
+                    <img src="dorkarani.jpg" alt="dorkarani.jpg" width="620">
+                    <h4>Nagishetti Dorka Rani</h4>
+                    <p>Worship Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="blessy.jpg" alt="benny" width="200">
+                    <h4>Nagishetti Blessy</h4>
+                    <p>Youth Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="benny.jpg" alt="benny" width="200">
+                    <h4>Nagishetti paul benjamin</h4>
+                    <p>Youth Leader</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 AAJM Ministries. All rights reserved.</p>
+    </footer>
+</body>
+</html>
